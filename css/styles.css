@@ -1,0 +1,494 @@
+/*
+    NAME       : Harsha Vardhan Gannamuneni
+    STUDENT NO : C0931034
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/*Style rules for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#companybanner {
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+    padding: 0.5px 0;
+}
+
+/* styling rules for hamburger menu */
+.mobile-nav a {
+    color: #061731da;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links*/
+.mobile {
+    display: block;
+}
+
+/* Style rules for navigation area */
+.desktop,
+#menu-links,
+.navarea {
+    display: none;
+}
+
+main {
+    display: block;
+    clear: both;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #90d1e7;
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #020d1d;
+    text-align: center;
+}
+
+#welcome {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 0;
+    color: #1e3d58;
+}
+
+/* Specials styling */
+#weekproddesc {
+    width: 100%;
+    text-align: left;
+    padding: 2px 2px;
+    margin: 10px 3px;
+}
+
+.costwayDehumidifier {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #170064;
+    border-color: #051d40;
+    border-width: 2px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#productweek {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    color: #1e3d58;
+}
+
+.costwayDehumidifier1 {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #170064;
+    border-color: #051d40;
+    border-width: 2px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#specialcontent {
+    text-align: center;
+}
+
+#specialcontent p {
+    text-align: center;
+}
+
+#aboutus {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    color: #172f45;
+}
+
+p {
+    text-align: justify;
+}
+
+#box {
+    clear: left;
+    background-color: #b6e6f5;
+    margin-bottom: 2.5%;
+    padding: 1% 2%;
+    border-top: 2px solid #172f45;
+    border-bottom: 2px solid #172f45;
+    border-radius: 8px;
+}
+
+#box h3 {
+    text-align: center;
+}
+
+/* Media styling */
+.audio,
+.video {
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid #172f45;
+    border-radius: 9px;
+    color: aliceblue;
+    background-color: #102a50da;
+}
+
+audio {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 35px;
+    border: 3px solid #4e7ca6;
+}
+
+video {
+    width: 290px;
+    margin: 6px 4px;
+    border-radius: 10px;
+    border: 3px solid #4e7ca6;
+}
+
+/* Styling footer part */
+footer {
+    margin: 10px 0;
+}
+
+footer div {
+    font-size: 0.75em;
+    padding: 0 1em;
+    text-align: center;
+    color: #051d40;
+}
+
+footer div a {
+    color: #051d40;
+    text-decoration: none;
+}
+
+/* Media query  for tablet(mostly nav bar) viewport */
+
+@media screen and (min-width:630px) {
+
+    /*making mobile viewport display none*/
+    .mobile,
+    .mobile-nav {
+        display: none;
+    }
+
+    .navarea {
+        display: block;
+    }
+
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+        align-self: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    /* style rule for nav area*/
+    nav li {
+        font-size: 1.75em;
+        font-family: 'Protest Strike', sans-serif;
+        border-top: 1px solid #1e3d58;
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #1e3d58;
+        margin-bottom: 10px;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        padding: 0.1em 0.75em;
+        text-decoration: solid;
+        color: rgb(9, 9, 9);
+    }
+
+    nav li:first-child {
+        border-top: none;
+    }
+
+    video {
+        width: 600px;
+        margin: 6px 4px;
+        border-radius: 10px;
+        border: 3px solid #4e7ca6;
+    }
+}
+
+/* Media query  for tablet(some) and desktop viewport */
+@media screen and (min-width:769px) {
+    .about {
+        display: block;
+    }
+
+    .about-mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    #companybanner {
+        height: 120px;
+        width: 100%;
+        border-radius: 8px;
+        margin: auto;
+        padding: 0.5px 0;
+    }
+
+    /* Style rule for header */
+    header {
+        float: left;
+        width: 15%;
+    }
+
+    /* Style rules for navigation area */
+    nav {
+        float: right;
+        width: 80%;
+        display: flex;
+        margin: 5em 3em 0 0;
+        padding: 0 1em 0 0;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        font-family: none;
+        font-size: 1.75em;
+        border: none;
+    }
+
+    nav li a {
+        display: block;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: solid;
+        color: rgb(9, 9, 9);
+    }
+
+    nav li a:hover {
+        background-color: #90d1e7;
+        color: #1e3d58;
+        border-radius: 8px;
+    }
+
+    main {
+        display: block;
+        clear: both;
+        padding: 2%;
+        font-size: 1.25em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #90d1e7;
+        border-radius: 8px;
+    }
+
+    main h2 {
+        color: #020d1d;
+    }
+
+    #welcome {
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 0;
+        color: #1e3d58;
+    }
+
+    /* Specials styling */
+    #productweek {
+        text-align: center;
+        font-size: 70px;
+        margin-top: 0;
+        color: #1e3d58;
+    }
+
+    .costwayDehumidifier {
+        float: left;
+        width: 20%;
+        border: 5px solid #170064;
+        border-color: #051d40;
+        border-width: 2px;
+        border-radius: 10px;
+        margin: 50px 0 0 40px;
+    }
+
+    #weekproddesc {
+        float: right;
+        width: 70%;
+        text-align: left;
+        padding: 2px 2px;
+        margin: 30px 3px;
+    }
+
+    .chooseus {
+        clear: both;
+        float: left;
+        width: 70%;
+        text-align: left;
+        padding: 2px 2px;
+        margin: 40px 3px;
+    }
+
+    .costwayDehumidifier1 {
+        float: right;
+        width: 20%;
+        border: 5px solid #170064;
+        border-color: #051d40;
+        border-width: 2px;
+        border-radius: 10px;
+        margin: 50px 35px 0 0;
+    }
+
+    #specialcontent {
+        clear: both;
+        text-align: center;
+        padding: 2px 2px;
+        margin: 10px 3px;
+    }
+
+    #specialcontent p {
+        text-align: center;
+    }
+
+    #aboutus {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0;
+        color: #172f45;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    #box1 {
+        background-color: #b6e6f5;
+        margin-bottom: 2.5%;
+        padding: 1% 2%;
+        border-top: 2px solid #172f45;
+        border-bottom: 2px solid #172f45;
+        border-radius: 8px;
+    }
+
+    #box2 {
+        float: left;
+        width: 45%;
+        background-color: #b6e6f5;
+        margin-bottom: 2.5%;
+        padding: 1% 2%;
+        border-top: 2px solid #172f45;
+        border-bottom: 2px solid #172f45;
+        border-radius: 8px;
+    }
+
+    #box3 {
+        float: right;
+        width: 45%;
+        background-color: #b6e6f5;
+        margin-bottom: 2.5%;
+        padding: 1% 2%;
+        border-top: 2px solid #172f45;
+        border-bottom: 2px solid #172f45;
+        border-radius: 8px;
+    }
+
+    #box3 ol li {
+        margin-bottom: 1.85%;
+    }
+
+    #box4 {
+        clear: both;
+        background-color: #b6e6f5;
+        margin-bottom: 2.5%;
+        padding: 1% 2%;
+        border-top: 2px solid #172f45;
+        border-bottom: 2px solid #172f45;
+        border-radius: 8px;
+    }
+
+    #box1 h3,
+    #box2 h3,
+    #box3 h3,
+    #box4 h3 {
+        text-align: center;
+    }
+
+    /* Styling footer part */
+    footer {
+        margin: 10px 0;
+    }
+
+    audio {
+        width: 50%;
+        margin: 10px auto;
+        border-radius: 35px;
+        border: 3px solid #4e7ca6;
+    }
+
+    video {
+        width: 800px;
+        margin: 6px auto;
+        border-radius: 10px;
+        border: 3px solid #4e7ca6;
+    }
+
+    footer div {
+        font-size: 0.75em;
+        padding: 0 1em;
+        text-align: center;
+        color: #051d40;
+    }
+
+    footer div a {
+        color: #051d40;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,417 @@
+/*
+    NAME       : Harsha Vardhan Gannamuneni
+    STUDENT NO : C0931034
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/*Style rules for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#companybanner {
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+    padding: 0.5px 0;
+}
+
+/* styling rules for hamburger menu */
+.mobile-nav a {
+    color: #061731da;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+/* Show mobile class, hide tablet-desktop class and menu-links*/
+.mobile {
+    display: block;
+}
+
+/* Style rules for navigation area */
+.desktop,
+#menu-links,
+.navarea {
+    display: none;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+main {
+    display: block;
+    clear: both;
+    padding: 2%;
+    font-size: 1.25em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #90d1e7;
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #193a6a;
+    text-align: center;
+}
+
+main h3 {
+    color: #193a6a;
+}
+
+main h3,
+main p {
+    text-align: center;
+}
+
+aside {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 2%;
+    background-color: #bfe7f4;
+    box-shadow: 5px 5px 8px #fbf9f9;
+    border-radius: 5%;
+}
+
+.grid-item1 {
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: #f0f4f6;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 3px solid #52cfee;
+    border-radius: 8px;
+}
+
+figure img {
+    border-radius: 8px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(78, 77, 155, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Styling footer part */
+footer {
+    margin: 10px 0;
+}
+
+footer div {
+    font-size: 0.75em;
+    padding: 0 1em;
+    text-align: center;
+    color: #051d40;
+}
+
+footer div a {
+    color: #051d40;
+    text-decoration: none;
+}
+
+/* Media query  for tablet(mostly nav bar) viewport */
+
+@media screen and (min-width:630px) {
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile,
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    main h3,
+    main p {
+        text-align: center;
+    }
+
+    .navarea {
+        display: block;
+    }
+
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+        align-self: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    /* style rule for nav area*/
+    nav li {
+        font-size: 1.75em;
+        font-family: 'Protest Strike', sans-serif;
+        border-top: 1px solid #1e3d58;
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #1e3d58;
+        margin-bottom: 10px;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        padding: 0.1em 0.75em;
+        text-decoration: solid;
+        color: rgb(9, 9, 9);
+    }
+
+    nav li:first-child {
+        border-top: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #bfe7f4;
+        box-shadow: 5px 5px 8px #fbf9f9;
+        border-radius: 8%;
+    }
+
+    aside h2 {
+        text-shadow: 5px 5px 5px #dfd8d8;
+    }
+
+    .grid-item0 {
+        grid-column: 1 / span 2;
+    }
+
+    .grid-item1 {
+        grid-column: 1 / span 2;
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #f0f4f6;
+        border-radius: 5%;
+        margin: 20px;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+}
+
+/* Media query  for tablet(some) and desktop viewport */
+
+@media screen and (min-width:769px) {
+    .about {
+        display: block;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    #companybanner {
+        height: 120px;
+        width: 100%;
+        border-radius: 8px;
+        margin: auto;
+        padding: 0.5px 0;
+    }
+
+    /* Style rule for header */
+    header {
+        float: left;
+        width: 15%;
+    }
+
+    /* Style rules for navigation area */
+    nav {
+        float: right;
+        width: 80%;
+        display: flex;
+        margin: 5em 3em 0 0;
+        padding: 0 1em 0 0;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        font-family: none;
+        font-size: 1.75em;
+        border: none;
+    }
+
+    nav li a {
+        display: block;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: solid;
+        color: rgb(9, 9, 9);
+    }
+
+    nav li a:hover {
+        background-color: #90d1e7;
+        color: #1e3d58;
+        border-radius: 8px;
+    }
+
+    main {
+        display: block;
+        clear: both;
+        padding: 2%;
+        font-size: 1.25em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: #90d1e7;
+        border-radius: 8px;
+    }
+
+    main h2 {
+        color: #193a6a;
+        text-align: center;
+    }
+
+    main h3,
+    main p {
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    aside {
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #bfe7f4;
+        box-shadow: 3px 3px 8px #fbf9f9;
+        border-radius: 8%;
+    }
+
+    aside h2 {
+        text-shadow: 5px 5px 5px #dfd8d8;
+    }
+
+    .grid-item0 {
+        grid-column: 1 / span 3;
+    }
+
+    .grid-item1 {
+        grid-column: 1 / span 3;
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 2%;
+        background-color: #f0f4f6;
+        border-radius: 5%;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    .frame {
+        opacity: 0.9;
+
+    }
+
+    .frame h3 {
+        font-weight: bolder;
+    }
+
+    .frame:hover {
+        background-color: #40869d;
+        color: #fbf9f9;
+        opacity: 1;
+        box-shadow: 8px 8px 10px #40869d;
+        border-radius: 8px;
+    }
+
+    /* Styling footer part */
+    footer {
+        margin: 10px 0;
+    }
+
+    footer div {
+        font-size: 0.75em;
+        padding: 0 1em;
+        text-align: center;
+        color: #051d40;
+    }
+
+    footer div a {
+        color: #051d40;
+        text-decoration: none;
+    }
+}

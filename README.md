@@ -13,6 +13,8 @@ Welcome to the Web Development project repository. This project contains a serie
 
 This repository contains a collection of web pages and resources that showcase different aspects of web development, including HTML, CSS, JavaScript, and multimedia integration.
 
+You can view the project live [here](https://harsha891.github.io/web-development/).
+
 
 ## Project Structure
 
